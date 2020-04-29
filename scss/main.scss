@@ -1,0 +1,43 @@
+/* Colors */
+$appBackgroundColor: #cecece;
+$contentBackgroundColor: #fff;
+$sidebarBackgroundColor: #3B3635;
+
+$primaryColor: #000;
+$secondaryColor: #000;
+html {
+    margin: 0;
+    padding: 0;
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: $appBackgroundColor;
+    
+        .main-content-wrapper {
+    
+            .app-container {
+                min-height: 100vh;
+                display: flex;
+    
+                .sidebar-container {
+                    flex: 1;
+                    background: $sidebarBackgroundColor;
+                    min-height: 100%;
+                    max-width: 200px;
+                }
+        
+                .main-content-container {
+                    flex: 1;
+                    min-height: 100%;
+                    background: $contentBackgroundColor;
+    
+                    .weather-screen-container {
+                        padding: 1.5rem;
+                        border-bottom: 2px solid #B2ACAA;
+                    }
+                }
+            }
+        }
+    }
+}

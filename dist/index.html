@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weathered</title>
+    <script src="https://kit.fontawesome.com/019ef34773.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <div id="main-content-container">
+        <div class="background-overlay">
+            <div class="main-content-wrapper">
+                <div class="control-info-wrapper">
+                    <div class="info-header">
+                        <div class="title-container">
+                            <h1 id="city-title"><i style="float: left;" class="far fa-keyboard"></i>London, ON Canada</h1>
+                            <input type="text" id="search" />
+                        </div>
+                    </div>
+                    <div class="time-day-current-container">
+                       <span class="day-container">Mon, </span><span id="current-time"></span></span>
+                    </div>
+                    <div class="weather-info-current-container">
+                        <div class="weather-icon-current-container">
+                            <canvas id="icon-main" width="80" height="80"></canvas>
+                        </div>
+                        <div class="weather-desc-current-container">
+
+                        </div>
+                        <div class="weather-temp-current-container">
+                            <div class="temp-container">
+                                24<sup>&deg;</sup>
+                            </div>
+                            <div class="high-low-container">
+                                <div class="high-container">
+                                    35<sup>&deg;</sup> C
+                                </div>
+                                <div class="low-container">
+                                    14<sup>&deg;</sup> C
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-info-wrapper">
+                    <div class="odds-info-wrapper">
+                        <div class="odds-wrapper">
+                            <div class="odds-container">
+                                <div class="odds-icon"><i class="fas fa-thermometer-half"></i></div>
+                                <div class="odds-text">Feels Like</div>
+                                <div class="odds-info"><span id="feels-like-info"></span> <sup>&deg;</sup></div>
+                            </div>
+                        </div>
+                        <div class="odds-wrapper">
+                            <div class="odds-container">
+                                <div class="odds-icon"><i class="fas fa-wind"></i></div>
+                                <div class="odds-text">Wind</div>
+                                <div id="wind-info" class="odds-info"></div>
+                            </div>
+                        </div>
+                        <div class="odds-wrapper">
+                            <div class="odds-container">
+                                <div class="odds-icon"><i class="fas fa-tint-slash"></i></div>
+                                <div class="odds-text">Humidity</div>
+                                <div id="humidity-info" class="odds-info"></div>
+                            </div>
+                        </div>
+                        <div class="odds-wrapper">
+                            <div class="odds-container">
+                                <div class="odds-icon"><i class="fas fa-sun"></i></div>
+                                <div class="odds-text">Sunrise</div>
+                                <div id="sunrise-info" class="odds-info"></div>
+                            </div>
+                        </div>
+                        <div class="odds-wrapper">
+                            <div class="odds-container">
+                                <div class="odds-icon"><i class="fas fa-moon"></i></div>
+                                <div class="odds-text">Sunset</div>
+                                <div id="sunset-info" class="odds-info"></div>
+                            </div>
+                        </div>
+                        <div class="odds-wrapper">
+                            <div class="odds-container">
+                                <div class="odds-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                <div class="odds-text">Pressure</div>
+                                <div id="pressure-info" class="odds-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="multi-days-wrapper">
+                        <div class="multi-days-container">
+                            <div class="multi-day">
+                                <div id="multi-day-text0" class="multi-day-text">Monday</div>
+                                <canvas id="icon0" class="multi-day-canvas" width="40" height="40"></canvas>
+                                <div id="multi-day-desc0" class="multi-day-desc">Cloudy</div>
+                                <div id="multi-day-temp0" class="multi-day-temp">1<sup>&deg;</sup>C</div>
+                            </div>
+                            <div class="multi-day">
+                                <div id="multi-day-text1" class="multi-day-text">Tuesday</div>
+                                <canvas id="icon1" class="multi-day-canvas" width="40" height="40"></canvas>
+                                <div id="multi-day-desc1" class="multi-day-desc">Snowy</div>
+                                <div id="multi-day-temp1" class="multi-day-temp">1<sup>&deg;</sup>C</div>
+                            </div>
+                            <div class="multi-day">
+                                <div id="multi-day-text2" class="multi-day-text">Wednesday</div>
+                                <canvas id="icon2" class="multi-day-canvas" width="40" height="40"></canvas>
+                                <div id="multi-day-desc2" class="multi-day-desc">Rain</div>
+                                <div id="multi-day-temp2" class="multi-day-temp">1<sup>&deg;</sup>C</div>
+                            </div>
+                            <div class="multi-day">
+                                <div id="multi-day-text3" class="multi-day-text">Thursday</div>
+                                <canvas id="icon3" class="multi-day-canvas" width="40" height="40"></canvas>
+                                <div id="multi-day-desc3" class="multi-day-desc">Clouds</div>
+                                <div id="multi-day-temp3" class="multi-day-temp">1<sup>&deg;</sup>C</div>
+                            </div>
+                            <div class="multi-day">
+                                <div id="multi-day-text4" class="multi-day-text">Friday</div>
+                                <canvas id="icon4" class="multi-day-canvas" width="40" height="40"></canvas>
+                                <div id="multi-day-desc4" class="multi-day-desc">Snow</div>
+                                <div id="multi-day-temp4" class="multi-day-temp">1<sup>&deg;</sup>C</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-overlay-container"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={########KEY########}}&libraries=places"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

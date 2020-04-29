@@ -1,0 +1,31 @@
+/* Colors */
+html {
+  margin: 0;
+  padding: 0;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  background: #cecece;
+}
+html body .main-content-wrapper .app-container {
+  min-height: 100vh;
+  display: flex;
+}
+html body .main-content-wrapper .app-container .sidebar-container {
+  flex: 1;
+  background: #3B3635;
+  min-height: 100%;
+  max-width: 200px;
+}
+html body .main-content-wrapper .app-container .main-content-container {
+  flex: 1;
+  min-height: 100%;
+  background: #fff;
+}
+html body .main-content-wrapper .app-container .main-content-container .weather-screen-container {
+  padding: 1.5rem;
+  border-bottom: 2px solid #B2ACAA;
+}
+
+/*# sourceMappingURL=main.css.map */
